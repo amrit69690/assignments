@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!--header content with navigation and logo -->
+        <nav>
+            <ul>
+                <li><a href="add_employee.html">Add Employee</a></li>
+                <li><a href="view_employee.html">View Employee</a></li>
+            </ul>
+        </nav>
+        <img src="images/logo.png" alt="Company Logo">
+    </header>
+
+    <main>
+        <section>
+            <h1>Add Employee</h1>
+            <form action="php/add_employee.php" method="POST">
+                <!-- Form fields for adding an employee -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="hours_worked">Hours Worked:</label>
+                <input type="number" id="hours_worked" name="hours_worked" required>
+
+                <label for="salary">Salary:</label>
+                <input type="number" id="salary" name="salary" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                
+                <button type="submit">Add Employee</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 Amrit company. All rights reserved.
+    </footer>
+</body>
+</html>
+
